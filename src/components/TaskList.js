@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Card, CardContent, Button, Typography, CardActions, Box, TextField } from '@mui/material';
-import { deleteTask, toggleComplete, filterTasks, reorderTasks } from '../features/tasks/tasksSlice';
+import { deleteTask, toggleComplete, reorderTasks } from '../features/tasks/tasksSlice';
 import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd'; // Import Drag-and-Drop components
 import ConfirmationDialog from './ConfirmationDialog';  // Modal for task deletion
 import TaskEditForm from './TaskEditForm';  // For editing task details
